@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LightCard | Composer & Audio Designer</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --bg-alt: #111727;
+      --text: #e8ecf3;
+      --accent: #00b7ff;
+      --highlight: #00ffaa;
+    }
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 100%);
+      color: var(--text);
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(11, 15, 25, 0.8);
+      backdrop-filter: blur(8px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 100;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin: 0;
+    }
+    nav a {
+      color: var(--text);
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--highlight);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 6rem 1.5rem 4rem;
+    }
+
+    #about {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    #about h2 {
+      color: var(--accent);
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    #about p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #cfd4e1;
+    }
+
+    #projects h2 {
+      text-align: center;
+      color: var(--accent);
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.6);
+    }
+    .card iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+    .card-content {
+      padding: 1rem 1.2rem 1.5rem;
+    }
+    .card-content h3 {
+      margin-top: 0.5rem;
+      color: var(--highlight);
+    }
+    .card-content p {
+      color: #d0d4de;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    #contact {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    #contact h2 {
+      color: var(--accent);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    #contact p {
+      color: #cfd4e1;
+      font-size: 1.1rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.6rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .btn:hover {
+      background: var(--highlight);
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      color: #808897;
+      font-size: 0.9rem;
+      padding: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LightCard</h1>
+    <nav>
+      <a href="#about">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Composer · Music Producer · Sound Engineer · SFX & VFX Specialist</h2>
+    <p>
+      I'm an easygoing creator who thrives on bringing ideas to life through sound and emotion. 
+      Give me a clear vision, and I’ll craft the atmosphere that makes it real — from cinematic scores to immersive sound design. 
+      Music is where feeling meets detail, and that’s exactly where I like to stay.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+      <!-- Fervour Abyss -->
+      <div class="card">
+        <iframe src="https://www.youtube.com/embed/xZrk2cSA3dY" allowfullscreen></iframe>
+        <div class="card-content">
+          <h3>Fervour Abyss</h3>
+          <p>An invitation from the unknown — tranquil yet mysterious. “Fervour Abyss” blends calm ambience with subtle unease, 
+          evoking comfort within darkness and serenity within depth.</p>
+        </div>
+      </div>
+
+      <!-- That Acute Spark in Your Eyes -->
+      <div class="card">
+        <iframe src="https://www.youtube.com/embed/znCB0_76LDA" allowfullscreen></iframe>
+        <div class="card-content">
+          <h3>That Acute Spark in Your Eyes</h3>
+          <p>A radiant moment of pure emotion — the spark that says everything is turning for the better. 
+          A hopeful and uplifting composition that celebrates warmth, connection, and the quiet joy of understanding.</p>
+        </div>
+      </div>
+
+      <!-- Discomposed Dream -->
+      <div class="card">
+        <iframe src="https://www.youtube.com/embed/TLQekHUY6pg" allowfullscreen></iframe>
+        <div class="card-content">
+          <h3>Discomposed Dream</h3>
+          <p>After every end comes a new beginning — fragile, uncertain, yet filled with hope. 
+          This piece captures the quiet beauty of recovery, when chaos settles into calm and light breaks through again.</p>
+        </div>
+      </div>
+
+      <!-- Heinous Succor -->
+      <div class="card">
+        <iframe src="https://www.youtube.com/embed/Gk0VVlOv6LM" allowfullscreen></iframe>
+        <div class="card-content">
+          <h3>Heinous Succor</h3>
+          <p>Heinous Succor plunges into guilt and fear, capturing the suffocating tension of a life trapped by irreversible actions. 
+          Pulsing beats and dark textures mirror inner turmoil, where every choice is a dead end and escape is impossible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Discord: <strong>lightcardovich.</strong></p>
+    <a class="btn" href="https://www.youtube.com/@lightcard_" target="_blank">YouTube Channel</a>
+  </section>
+
+  <footer>
+    <p>© 2025 LightCard — Crafted with sound & style.</p>
+  </footer>
+</body>
+</html>
